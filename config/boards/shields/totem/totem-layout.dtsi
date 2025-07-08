@@ -5,9 +5,6 @@
         compatible = "zmk,physical-layout";
         display-name = "totem";
 
-        kscan = <&kscan0>;
-        transform = <&matrix_transform0>;
-
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100   71  148 (-1000)   121   198>
             , <&key_physical_attrs 100 100  180   59  (-400)   230   109>

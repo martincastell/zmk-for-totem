@@ -17,9 +17,8 @@
 #define BASE 0
 #define NAV  1
 #define SYM  2
-#define ADJ  3
-#define TVP1 4
-#define TVP2 5
+#define SYM  3
+#define ADJ  4
 
 &mt {
     quick-tap-ms = <100>;
@@ -118,7 +117,7 @@
            &kp Q       &kp W       &lt 1 F      &kp P        &kp B        &kp J     &kp L            &kp U        &kp Y       &kp SEMICOLON
            &mt LCTRL A  &mt LALT R  &mt LGUI S  &mt LSHFT T  &kp G        &kp M     &mt RSHFT N      &mt RGUI E  &mt RALT I  &mt RCTRL O
 &kp LSHFT  &kp Z       &kp X       &kp C        &kp D        &kp V        &kp K     &kp H            &kp COMMA    &kp DOT     &kp FSLH            &kp DEL
-                                   &kp TAB      &lt 1 SPACE  &kp LSHFT    &kp RGUI  &lt 2 BACKSPACE  &mo 3
+                                   &kp TAB      &lt 1 SPACE  &kp LSHFT    &kp RGUI  &lt 2 BACKSPACE  &mo 4
             >;
         };
 
@@ -171,6 +170,32 @@
                 &kp CARET   &kp PLUS    &kp QUESTION &kp EXCLAMATION &kp DOLLAR    &kp SQT    &kp LPAR    &kp RPAR    &kp LBKT         &kp RBKT
 &trans           &kp PERCENT &kp ASTERISK &kp AT_SIGN   &kp COLON      &kp BSLH     &kp DQT    &kp EQUAL   &kp LESS    &kp GREATER      &kp FSLH   &trans
                                            &trans        &trans         &mo 3        &trans         &trans        &trans
+            >;
+        };
+
+        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
+        num_layer {
+            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+
+            label = "NUM";
+
+            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+            //             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃     7     ┃     8     ┃     9     ┃           ┃
+            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+            //             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃     4     ┃     5     ┃     6     ┃           ┃
+            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
+            // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃     0     ┃     1     ┃     2     ┃     3     ┃           ┃           ┃
+            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+            //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
+            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N7  &kp N8  &kp N9
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N4  &kp N5  &kp N6
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N0  &kp N1  &kp N2  &kp N3 &trans
+                             &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 

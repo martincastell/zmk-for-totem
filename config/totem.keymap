@@ -166,9 +166,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp TILDE       &kp MINUS       &kp HASH        &kp AMPERSAND       &kp PIPE        &kp GRAVE   &kp LCURLY      &kp RCURLY      &kp UNDERSCORE   &kp SEMICOLON
-            &kp CARET       &kp PLUS        &kp QUESTION    &kp EXCLAMATION     &kp DOLLAR      &kp SQT     &kp LPAR        &kp RPAR        &kp LBKT         &kp RBKT
-&trans      &kp PERCENT     &kp ASTERISK    &kp AT_SIGN     &kp COLON           &kp BSLH        &kp DQT    &kp EQUAL       &kp LESS        &kp GREATER      &kp FSLH       &trans
+            &kp TILDE       &kp MINUS       &kp HASH        &kp AMPERSAND       &kp PIPE        &kp GRAVE   &kp LBRC        &kp RBRC      &kp UNDERSCORE   &kp SEMICOLON
+            &kp CARET       &kp PLUS        &kp QUESTION    &kp EXCLAMATION     &kp DOLLAR      &kp SQT     &kp LPAR        &kp RPAR      &kp LBKT         &kp RBKT
+&trans      &kp PERCENT     &kp ASTERISK    &kp AT_SIGN     &kp COLON           &kp BSLH        &kp DQT     &kp EQUAL       &kp LESS      &kp GREATER      &kp FSLH       &trans
                                            &trans        &trans         &trans        &trans         &trans        &trans
             >;
         };

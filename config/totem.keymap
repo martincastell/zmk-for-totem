@@ -104,20 +104,20 @@
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃     Q     ┃     W     ┃ F (lt 1)  ┃ P (lt 2)  ┃     B     ┃   ┃     J     ┃     L     ┃     U     ┃     Y     ┃     ;     ┃
+            //             ┃     Q     ┃  W (lt 3) ┃ F (lt 1)  ┃ P (lt 2)  ┃     B     ┃   ┃     J     ┃ L (lt 2)  ┃ U (lt 1)  ┃     Y     ┃     ;     ┃
             //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
             //             ┃ A (LCTRL) ┃  R (LALT) ┃  S (LGUI) ┃ T (LSHFT) ┃     G     ┃   ┃     M     ┃ N (RSHFT) ┃ E (RGUI)  ┃ I (RALT)  ┃ O (RCTRL) ┃
             // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
             // ┃   SHIFT   ┃     Z     ┃     X     ┃     C     ┃     D     ┃     V     ┃   ┃     K     ┃     H     ┃     ,     ┃     .     ┃     /     ┃    DEL    ┃
             // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃   TAB     ┃ SPC (lt 1)┃   SHIFT   ┃   ┃ENTER(lt 2)┃    BSPC   ┃   RGUI    ┃
+            //                                     ┃   lt 4    ┃ SPC (lt 1)┃ TAB(lt 3) ┃   ┃ENTER(lt 2)┃    BSPC   ┃   RGUI    ┃
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q       &kp W       &lt 1 F      &kp P        &kp B        &kp J     &kp L            &kp U        &kp Y       &kp SEMICOLON
-           &mt LCTRL A  &mt LALT R  &mt LGUI S  &mt LSHFT T  &kp G        &kp M     &mt RSHFT N      &mt RGUI E  &mt RALT I  &mt RCTRL O
-&kp LSHFT  &kp Z       &kp X       &kp C        &kp D        &kp V        &kp K     &kp H            &kp COMMA    &kp DOT     &kp FSLH            &kp DEL
-                                   &kp TAB      &lt 1 SPACE  &kp LSHFT    &kp RGUI  &lt 2 BACKSPACE  &mo 4
+           &kp Q        &lt 3 W     &lt 1 F      &lt 2 P      &kp B        &kp J     &lt 2 L          &lt 1 U        &kp Y       &kp SEMICOLON
+           &mt LCTRL A  &mt LALT R  &mt LGUI S   &mt LSHFT T  &kp G        &kp M     &mt RSHFT N      &mt RGUI E     &mt RALT I  &mt RCTRL O
+&kp LSHFT  &kp Z        &kp X       &kp C        &kp D        &kp V        &kp K     &kp H            &kp COMMA      &kp DOT     &kp FSLH           &kp DEL
+                                   &lt 4         &lt 1 SPACE  &lt 3 TAB    &lt 2 ENTER  &kp BSPC          &kp RGUI
             >;
         };
 
@@ -143,7 +143,7 @@
            &trans       &trans       &trans       &trans       &kp LBRC    &kp RBRC   &trans          &trans       &trans      &trans
            &trans       &trans       &trans       &trans       &kp LBKT    &kp RBKT   &kp LEFT        &kp DOWN     &kp UP      &kp RIGHT
 &trans     &trans       &trans       &trans       &trans       &kp LPAR    &kp RPAR   &kp HOME        &kp PG_DN    &kp PG_UP   &kp END            &trans
-                                   &trans        &trans        &trans      &mo 3      &kp RSHIFT      &trans
+                                   &trans        &trans        &trans      &trans      &trans      &trans
             >;
         };
 
@@ -169,7 +169,7 @@
                 &kp TILDE   &kp MINUS   &kp HASH   &kp AMPERSAND   &kp PIPE      &kp GRAVE   &kp LCURLY   &kp RCURLY   &kp UNDERSCORE   &kp SEMICOLON
                 &kp CARET   &kp PLUS    &kp QUESTION &kp EXCLAMATION &kp DOLLAR    &kp SQT    &kp LPAR    &kp RPAR    &kp LBKT         &kp RBKT
 &trans           &kp PERCENT &kp ASTERISK &kp AT_SIGN   &kp COLON      &kp BSLH     &kp DQT    &kp EQUAL   &kp LESS    &kp GREATER      &kp FSLH   &trans
-                                           &trans        &trans         &mo 3        &trans         &trans        &trans
+                                           &trans        &trans         &trans        &trans         &trans        &trans
             >;
         };
 
